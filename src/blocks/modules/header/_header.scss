@@ -1,3 +1,14 @@
-.title {
-  color: red;
+.header__logo {
+  width: 154px;
+  height: 52px;
+  background-image: url('../img/logo-left.png');
+
+  &--right {
+    width: 252px;
+    height: 106px;
+    background-image: url('../img/logo-right.png');
+    position: absolute;
+    top: -20px;
+    right: -60px;
+  }
 }
