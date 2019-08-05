@@ -15,14 +15,14 @@ const pinEndCoordinate = scaleWidth - pinMidpoint - pinOffset
 
 const pinSnapPoints = [
   pinStartCoordinate,
-  149 - pinMidpoint,
-  374 - pinMidpoint,
+  150 - pinMidpoint,
+  375 - pinMidpoint,
   pinEndCoordinate
 ]
 const pinBreakpoints = [
-  74 - pinMidpoint,
-  261 - pinMidpoint,
-  572 - pinMidpoint
+  75 - pinMidpoint,
+  262 - pinMidpoint,
+  573 - pinMidpoint
 ]
 
 const onPinClick = evt => {
@@ -91,6 +91,27 @@ const init = () => {
     onPinClick(evt)
   })
 }
+
+const text1 = document.querySelector('#text1');
+  text1.addEventListener("click", function() {
+    pin.style.left = 'calc(1px - 17px / 2)';
+  });
+
+const text2 = document.querySelector('#text2');
+  text2.addEventListener("click", function() {
+    pin.style.left = 'calc(150px - 17px / 2)';
+  });
+
+const text3 = document.querySelector('#text3');
+  text3.addEventListener("click", function() {
+    pin.style.left = 'calc(375px - 17px / 2)';
+  });
+
+const text4 = document.querySelector('#text4');
+  text4.addEventListener("click", function() {
+    pin.style.left = 'calc(767px - 17px / 2)';
+  });
+ 
 
 export default {
   init

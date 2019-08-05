@@ -25,7 +25,7 @@
 .slider__pin {
   background-image: url("../img/pin.png");
   height: 14px;
-  left: calc(149px - 17px / 2);
+  left: calc(150px - 17px / 2);
   position: absolute;
   top: -16px;
   width: 17px;
@@ -47,6 +47,7 @@
   margin: 0;
   max-width: 175px;
   padding: 0;
+  cursor: pointer;
 
   &:nth-of-type(1) {
     margin-right: 86px;
