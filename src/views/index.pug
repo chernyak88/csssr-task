@@ -2,13 +2,13 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "CSSSR"
+	- const title = "CSSSR - Igor Chernyak"
 
 block content
 	include ../blocks/modules/header/header.pug
 	include ../blocks/modules/candidate/candidate.pug
 	include ../blocks/modules/skills/skills.pug
+	include ../blocks/modules/slider/slider.pug
 
 block scripts
 	script(src="../js/main.js")
-	script(src="../js/vendor.js")

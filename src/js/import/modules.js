@@ -1,2 +1,5 @@
-import "%modules%/header/header";
-import "%modules%/footer/footer";
+import slider from '../../blocks/modules/slider/slider';
+
+slider.init()
+
+
