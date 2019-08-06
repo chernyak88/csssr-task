@@ -1,0 +1,33 @@
+.footer {
+  height: 170px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__text {
+  align-items: start;
+  display: flex;
+  font-family: 'pt_sansbold';
+  color: #2f1b15;
+  font-size: 22.43px;
+  line-height: 49.83px;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.footer__input {
+  background-color: transparent;
+  background-image: url("../img/separator.png");
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  border: none;
+  display: block;
+  flex-grow: 0;
+  font-family: 'courier_newregular';
+  font-size: 30px;
+  width: 195px;
+  margin: 0;
+  margin-left: 16px;
+  padding-left: 14px;
+  outline: none;
+}
