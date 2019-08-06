@@ -1,0 +1,47 @@
+input::-webkit-input-placeholder {
+  font-family: 'courier_newregular';
+  color: #231f20;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+input:-moz-placeholder {
+  font-family: 'courier_newregular';
+  color: #231f20;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;} 
+input:-moz-placeholder      {text-overflow:ellipsis;} 
+input:-ms-input-placeholder {text-overflow:ellipsis;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.text-field__input::-webkit-input-placeholder       {opacity: 1; transition: opacity 1s ease;}
+.text-field__input::-moz-placeholder                {opacity: 1; transition: opacity 1s ease;}
+.text-field__input:-moz-placeholder                 {opacity: 1; transition: opacity 1s ease;}
+.text-field__input:-ms-input-placeholder            {opacity: 1; transition: opacity 1s ease;}
+.text-field__input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 1s ease;}
+.text-field__input:focus::-moz-placeholder          {opacity: 0; transition: opacity 1s ease;}
+.text-field__input:focus:-moz-placeholder           {opacity: 0; transition: opacity 1s ease;}
+.text-field__input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 1s ease;}
