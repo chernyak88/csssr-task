@@ -1,17 +1,18 @@
 .skills {
   font-family: 'pt_sansbold';
-  margin-bottom: 65px;
+  margin-bottom: 41px;
 
   &__title {
     font-size: 24px;
     color: #2f1b15;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
   }
 
   &__text {
     font-family: 'pt_sansregular';
     font-size: 15px;
+    line-height: 22px;
     color: #3d3d3d;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
 }

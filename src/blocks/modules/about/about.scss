@@ -1,18 +1,19 @@
 .about {
-  margin-bottom: 60px;
+  margin-bottom: 42px;
 
   &__title {
     font-family: 'pt_sansbold';
     font-size: 24px;
     color: #2f1b15;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &__desc {
     font-family: 'pt_sansregular';
     font-size: 15px;
+    line-height: 22px;
     color: #3d3d3d;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   &__text {
@@ -24,7 +25,6 @@
     font-family: 'courier_newregular';
     font-size: 30px;
     line-height: 60px;
-    margin-top: 20px;
     overflow: hidden;
     resize: none;
     width: 100%;
