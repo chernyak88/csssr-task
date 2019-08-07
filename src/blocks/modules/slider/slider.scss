@@ -12,6 +12,10 @@
 .slider {
   margin-top: 35px;
   width: 769px;
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .slider__scale {
@@ -29,6 +33,7 @@
   position: absolute;
   top: -16px;
   width: 17px;
+  cursor: pointer;
 
   &--transition {
     transition: left .1s ease-out;
@@ -57,4 +62,52 @@
   &:last-of-type {
     margin-left: auto;
   }
+}
+
+.slider__desktop-list {
+  display: none;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.slider__desktop-item {
+  width: 100%;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.slider__desktop-label {
+  cursor: pointer;
+  display: block;
+  margin-left: 30px;
+  position: relative;
+  line-height: 30px;
+
+  &::before {
+    background-image: url("../img/radio-off.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 26px;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    width: 26px;
+  }
+}
+
+.slider__desktop-input:checked + .slider__desktop-label::before {
+  background-image: url("../img/radio-on.png");
 }

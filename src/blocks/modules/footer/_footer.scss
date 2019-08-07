@@ -12,6 +12,10 @@
     line-height: 49.83px;
     margin: 0;
     margin-bottom: 13px;
+
+    @include phones {
+      flex-wrap: wrap;
+    }
   }
 
   &__input {
@@ -28,5 +32,9 @@
     margin-left: 20px;
     padding-left: 8px;
     outline: none;
+
+    @include phones {
+      margin-left: 0;
+    }
   }
 }
